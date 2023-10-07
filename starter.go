@@ -20,6 +20,11 @@ func StartServices() (stopServices func(), err error) {
 
 	composePath := path.Join(confFolder, "docker-compose.yml")
 
+	return StartServicesWithCompose(composePath)
+}
+
+func StartServicesWithCompose(composePath string) (stopServices func(), err error) {
+
 	_, err = os.ReadFile(composePath)
 
 	if err != nil {
