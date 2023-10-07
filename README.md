@@ -42,3 +42,9 @@ func main() {
 	sidecar.Start(new(adapter.BrokerConnector))
 }
 ```
+
+Instead of StartServices you can call:
+```go
+	stop, err := starter.StartServicesWithCompose(composePath)
+```
+where *composePath* is full path of docker-compose.yml.
