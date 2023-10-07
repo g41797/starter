@@ -1,5 +1,7 @@
 # starter
 
+[![Go](https://github.com/g41797/starter/actions/workflows/go.yml/badge.svg)](https://github.com/g41797/starter/actions/workflows/go.yml)
+
 *starter* is part of [sputnik](https://github.com/g41797/sputnik#readme).
 It's placed in the separate repository due to high requirements for golang version (1.21).
 
